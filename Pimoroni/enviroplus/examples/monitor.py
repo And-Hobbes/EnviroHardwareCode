@@ -298,6 +298,11 @@ def handle_display_everything_mode():
         display_everything()
 
 def main_loop ():
+    global mode, last_page, delay
+    global proximity, lux
+    global screen_on, dimmed, light_off_time, light_on_time
+    global dim_delay, off_delay, on_delay
+    
     screen_on = True
     dimmed = False
     light_off_time = None
